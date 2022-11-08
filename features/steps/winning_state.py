@@ -1,14 +1,14 @@
 from behave import *
 
-@given('the snakess')
+@given('the snake2')
 def step_iplm(context):
-    context.snake = {'length': 2, 'position': {'y': 2, 'x':1}}
-    context.game = {'length': 1}
+    context.snake = {'squaremeter': 2, 'position': {'y': 2, 'x':1}}
+    context.game = {'squaremeter': 1}
 
 @when('the snake runs out of space')
 def step_impl(context):
     context.isOutOfSpace = False
-    if context.snake['length'] >= 1: #Context did not work here for some reason
+    if context.snake['squaremeter'] >= context.game['squaremeter']:
         context.isOutOfSpace = True
 
 @then('then the game is won')
