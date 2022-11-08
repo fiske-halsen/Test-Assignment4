@@ -1,6 +1,9 @@
 # Assigenment 4
 
-Foobar is a Python library for dealing with word pluralization.
+Made by:
+- Christoffer Wegner : cph-cw109@cphbusiness.dk
+- Phillip Hansen : cph-pa124@cphbusiness.dk
+- Sebastian Godsk : cph-sh497@cphbusiness.dk
 
 ## Mockito Powerups
 
