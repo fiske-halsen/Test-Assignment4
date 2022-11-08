@@ -94,7 +94,7 @@ With this we verify that the mock is never to be verified.
 
 * Predicates are expressions that can be evaluted to a boolean value i.e. true or false. As seen on the example below, we have created a predicate that says the argument p should be creater than 0. Note that the predicate is only evaluated when the method is actually invoked and in the below case p represents the invoking parameter for GetBookingsForCustomerId.
 
-```chsarp
+```csharp
    [Test]
         public async Task GetBookingsForCustomer_Should_Return_Bookinglist()
         {
