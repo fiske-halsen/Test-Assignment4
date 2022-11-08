@@ -3,6 +3,11 @@ Feature:
     If the game dosent have walls, the snake should wrap around (like in Pacman)
 
     Scenario: snake hits itself
-        Given the snake
-        When the snakes head run into the apple
-        Then then the snake will get longer
+        Given the game has walls
+        When the snakes head run into the wall
+        Then the snake dies
+
+    Scenario: snake hits itself
+        Given the game has no walls
+        When the snakes head run into its own body
+        Then the snake diess
