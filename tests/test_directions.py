@@ -1,5 +1,5 @@
 import unittest
-import directions
+import src.directions as directions
 
 
 class TestDirectionMethods(unittest.TestCase):

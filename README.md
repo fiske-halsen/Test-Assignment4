@@ -110,3 +110,9 @@ With this we verify that the mock is never to be verified.
             _bookingStorageMock.Verify(mock => mock.GetBookingsForCustomerId(It.Is<int>(p => p == 1)));
         }
 ```
+## Snake testing
+
+NOTES
+* run this before making the coverage report ```coverage run -m unittest tests/test_directions.py -v```
+
+* now run thus ```coverage report -m ```
