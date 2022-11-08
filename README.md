@@ -92,7 +92,7 @@ With this we verify that the mock is never to be verified.
 
 **5. How do you use a predicate to verify the properties of the arguments given to a call to the nock ?**
 
-* Predicates are expressions that can be evaluted to a boolean value i.e. true or false. As seen on the example below, we have created a predicate that says the argument p should be creater than 0. Note that the predicate is only evaluated when the method is actually invoked and in the below case p represents the invoking parameter for GetBookingsForCustomerId.
+* Predicates are expressions that can be evaluted to a boolean value i.e. true or false. As seen on the example below, we have created a predicate that says the argument p should be creater than 0 ```It.Is<int>(p => p > 0))```. Note that the predicate is only evaluated when the method is actually invoked and in the below case p represents the invoking parameter for GetBookingsForCustomerId.
 
 ```csharp
    [Test]
