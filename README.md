@@ -112,7 +112,12 @@ With this we verify that the mock is never to be verified.
 ```
 ## Snake testing
 
-NOTES
-* run this before making the coverage report ```coverage run -m unittest tests/test_directions.py -v```
+* Run command ```source venv/Scripts/activate``` to activate the virtual environment
 
-* now run thus ```coverage report -m ```
+* Run command ```behave``` to see the outcome of the BDD tests.
+
+* Run this before making the coverage report ```coverage run -m unittest tests/test_directions.py -v```
+
+* Now run this ```coverage report -m ``` to see the coverage report showing percentage of the tested methods.
+
+* Run following command ```mut.py --target src --unit-test tests -m``` to see the output of the mutation testing. See at the section printed out in the console called ```[*] Mutation score```
